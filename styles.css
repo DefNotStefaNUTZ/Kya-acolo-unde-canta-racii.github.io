@@ -25,7 +25,7 @@ main {
 }
 
 .attraction {
-    flex-basis: calc(50%);
+    flex-basis: calc(70%);
     max-height: 150px;
     overflow: hidden;
     position: relative;
