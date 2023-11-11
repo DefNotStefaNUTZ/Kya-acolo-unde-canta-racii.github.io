@@ -23,47 +23,45 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 20px auto; /* Adjust the left margin */
+    margin: 20px auto;
     padding: 20px;
     background-color: #0094ff;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    position: relative; /* Added relative positioning */
+    position: relative;
 }
 
 .attraction {
-    flex-basis: calc(50% - 20px);
-    margin-bottom: 20px;
+    flex-basis: calc(60%);
+    max-height: 250px;
     overflow: hidden;
     position: relative;
-    transition: transform 0.2s ease;
+    transition: max-height 0.5s ease;
+    margin: 40px;
 }
 
 .attraction:hover {
-    transform: scale(1.05);
+    max-height: 500px;
 }
 
 .attraction img {
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .attraction .info {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     text-align: center;
     transition: opacity 0.3s ease;
     border-radius: 10px;
+    opacity: 0;
 }
 
 .attraction:hover .info {
     opacity: 1;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: white;
 }
 
 
@@ -74,7 +72,6 @@ footer {
 }
 
 .header {
-    background-image: url('header-background.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -113,4 +110,23 @@ footer {
     display: flex;
     justify-content: space-between;
     top: 0;
+}
+#attraction2,
+#attraction4 {
+    margin-left: auto;
+}
+#attraction2 .info,
+#attraction4 .info {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#attraction1 .info,
+#attraction3 .info,
+#attraction5 .info {
+    bottom: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
 }
