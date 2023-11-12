@@ -24,7 +24,7 @@ main {
     max-height: 85px;
     overflow: hidden;
     position: relative;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.8s ease;
     margin: calc(1.25%);
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@ main {
 
 
 .attraction:hover {
-    max-height: 500px;
+    max-height: 700px;
 }
 
 .attraction .info {
@@ -44,6 +44,20 @@ main {
     border-radius: 10px;
     opacity: 0;
     width: 30vw;
+}
+.groupPhoto img {
+    flex: 1;
+    width: calc(49.5% - 10px); /* Adjusted to account for the gap between images */
+    height: auto;
+    border-radius: 20px;
+    max-height: 20vw; 
+    object-fit: cover;
+}
+
+.groupPhoto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .attraction:hover .info {
@@ -118,6 +132,11 @@ footer {
 .nameTxt {
     font-size: 4vw;
     font-weight: bold;
+}
+.secondaryObj {
+    font-size: 3vw;
+    font-weight: bold;
+    color: black;
 }
 #attraction2,
 #attraction4 {
