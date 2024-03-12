@@ -1,159 +1,73 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en" >
 <head>
+  <meta charset="UTF-8">
+  <title>CodePen - Blog Card</title>
+  <link rel="stylesheet" href="./style.css">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excurisa Noastră la Târgu Mureș</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <h1>Excursia Noastră la Târgu Mureș</h1>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="card__image" width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Technology</span>
+      <h4>What's new in 2022 Tech</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+    </div>
+    <div class="card__footer">
+      <div class="user">
+        <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
+        <div class="user__info">
+          <h5>Jane Doe</h5>
+          <small>2h ago</small>
         </div>
-    </header>
-
-    <main>
-        <p class="nameInfoTxt">Descriere generală</p>
-        <p class="infoLongTxt">
-            Excursia dată a fost realizată în cadrul perioadei 31 octombrie - 3 noiembrie. În cadrul excursiei multidisciplinare, am vizitat multiple atracții turistice. Prima noastră oprire a fost la Salina Praid, o peșteră gigantică de sare în care ne-am odihnit timp de 4 ore după un drum lung. Revendicând puteri, ne-am pornit din nou la drum, iar următoarea oprire pe lista noastră a fost Grădina Zoologică din Târgu Mureș. Am admirat elefanți, girafe, papagali și urși timp de 2 ore, după care ne-am încheiat prima zi.
-            Ne-am apropiat încet de hotel și ne-am cazat în jurul orei 17:00. Prima zi a excursiei s-a încheiat la hotel în liniște. A doua zi, fix de dimineață, după micul dejun, ne-am strâns cu toții pentru o mică plimbare către Palatul Culturii. Am făcut o mică oprire pentru a admira arhitectura holului interior și cele 2 oglinzi în stil venețian, apoi ne-am continuat plimbarea către Catedrala Înălțării Domnului. După ce am admirat catedrala, ne-am îndreptat spre autocar.
-            Ne îndreptam deja către ultima noastră atracție: Sighișoara. Odată ajunși în cetatea-oraș, nu am fost dezamăgiți. Arhitectura medievală și turnul cu ceas, pe lângă celelalte puncte de interes, au fost puncte majore de interes pentru mulți dintre noi. Cu siguranță, pe drumul înapoi, ne-am oprit la mall, unde unii dintre "turiști" au făcut cumpărături pentru 2 ani înainte, iar alții au luat o pauză, luând o gustare înainte de drum. Restul drumului a fost liniștit. Am ajuns înapoi în Chișinău în jurul orei 3:00, iar după un somn bine meritat, ziua următoare am rămas să ne gândim la excursia de neuitat de care am avut parte.
-        </p>
-    </main>
-
-    <main>
-        <article class="attraction" id="attraction1">
-            <div class="info">
-                <p class="nameTxt">Salina Praid</p>
-                <p class="infoTxt">
-                    Salina Praid este un obiectiv important de vizitat atât din punct de vedere turistic cât si din punct de vedere terapeutic.
-                </p>
-            </div>
-            <img src="Salina Praid.jpg" alt="Salina Praid">
-        </article>
-
-        <article class="attraction" id="attraction2">
-            <div class="info">
-                <p class="nameTxt">Grădina zoologică</p>
-                <p class="infoTxt">
-                    O lume fascinantă în mijlocul pădurii - este cea mai mare grădină zoologică din țară ca și suprafață.
-                </p>
-            </div>
-            <img src="Grădina zoologică.jpg" alt="Grădina zoologică">
-        </article>
-
-        <article class="attraction" id="attraction3">
-            <div class="info">
-                <p class="nameTxt">Palatul culturii</p>
-                <p class="infoTxt">
-                    La exterior palatul este împodobit cu mozaicuri și basoreliefuri în bronz și piatră, fresce și vitralii, toate specifice stilului Secession.
-                </p>
-            </div>
-            <img src="Palatul culturii.jpg" alt="Palatul culturii">
-        </article>
-
-        <article class="attraction" id="attraction4">
-            <div class="info">
-                <p class="nameTxt">Catedrala Înălțării Domnului</p>
-                <p class="infoTxt">
-                    Catedrala ortodoxă Înălțarea Domnului este cel mai mare edificiu religios din Târgu Mureș.
-                </p>
-            </div>
-            <img src="Catedrala Înălțării domnului.jpg" alt="Catedrala Înălțării domnului">
-        </article>
-
-        <article class="attraction" id="attraction5">
-            <div class="info">
-                <p class="nameTxt">Cetatea Sighișoara</p>
-                <p class="infoTxt">Cetatea Sighișoarei este cea mai bine păstrată cetate orășenească din Transilvania.</p>
-            </div>
-            <img src="Cetatea Sighișoara.jpg" alt="Cetatea Sighișoara">
-        </article>
-    </main>
-    <main>
-        <p class="nameInfoTxt">Salina Praid</p>
-        <p class="infoLongTxt">
-            Salina Praid este un obiectiv important de vizitat atât din punct de vedere turistic cât si din punct de vedere terapeutic.
-            Salina Praid se găsește în Ardeal, în zona numită “Ținutul Sării”. Această denumire a fost semnalată prima dată în secolul XVIII și a fost dobandită după minereul existent în zonă. Salina Praid nu este doar un element de atracţie estetică, interesantă prin spaţiile galeriei deschise pentru vizitare, ci un factor de salinoterapie ca o formă aparte a climatoterapiei subterane, numită şi speleoterapie în cazul peşterilor, ce reprezintă expunerea organismului unui mediu climatic specific prin prezenţa aerosolurilor, adică particulelor lichide sau solide microscopice.
-            Ce ne-a plăcut: frumusețea și dimensiunile impresionante ale golului subteran, posibilitate unei game largi de activități de-a lungul vizitei, muzeul.
-        </p>
-
-        <p class="nameInfoTxt">Grădina Zoologică</p>
-        <p class="infoLongTxt">
-            O lume fascinantă în mijlocul pădurii - este cea mai mare grădină zoologică din țară ca și suprafață, și singura care deține elefanți, girafe și giboni.
-            Datorită dezvoltării continue, grădina zoologică oferă în fiecare an noi atracții pentru vizitatori, inclusiv curtea de țară care prezintă specii autohtone, dar și noile habitaturi cu acces pentru animale. În grădina zoologică au loc activități educaționale permanente.
-        </p>
-
-        <p class="nameInfoTxt">Palatul Culturii</p>
-        <p class="infoLongTxt">
-            La exterior palatul este împodobit cu mozaicuri și basoreliefuri în bronz și piatră, fresce și vitralii, toate specifice stilului Secession. În interior, în Sala oglinzilor, există două grupuri a câte trei oglinzi mari de cristal și 12 vitralii viu colorate, care ocupă întreg peretele dinspre stradă. Holul interior este impunător, fiind lung de 45 de metri, realizat din marmură de Carrara și delimitat de două oglinzi venețiene.
-        </p>
-
-        <p class="nameInfoTxt">Catedrala Înălțării Domnului</p>
-        <p class="infoLongTxt">
-            Catedrala ortodoxă Înălțarea Domnului este cel mai mare edificiu religios din Târgu Mureș. Catedrala a fost construită în centrul orașului (în prezent Piața Trandafirilor) între anii 1925 – 1934. Biserica a fost construită după planurile arhitectului Victor Vlad, în formă de cruce greacă, cu brațele egale. Dacă vorbim despre lăcășurile de cult ortodoxe din Transilvania, Catedrala Ortodoxă din Târgu Mureș reprezintă primul monument romanesc clădit după Unirea de la 1918
-        </p>
-
-        <p class="nameInfoTxt">Cetatea Sighișoara</p>
-        <p class="infoLongTxt">
-            Sighişoara este un municipiu din judeţul Mureş. Cetatea Sighișoarei este cea mai bine păstrată cetate orășenească din Transilvania şi totodată cea mai mare cetate medievală din Europa locuită fără întrerupere, înregistrată în patrimoniul UNESCO. Principalele obiective:
-        </p>
-
-        <p class="secondaryObj">1) Turnul cu Ceas - Muzeu</p>
-        <p class="infoLongTxt">
-            Simbol al autorităţii publice in trecut, iar acum al oraşului Sighişoara, Tur­nul cu Ceas este unul din cele mai expresive monumente de arhitectură militară din Transilvania.
-        </p>
-
-        <p class="secondaryObj">2) Biserica din Deal</p>
-        <p class="infoLongTxt">
-            Este o Biserică Evanghelică care a fost construită în mai multe etape între 1345-1525. Închinată Sfântului Nicolae, ea se află în vârful așa-numitului „Deal al Școlii”
-        </p>
-
-        <p class="secondaryObj">3) Scara Acoperită</p>
-        <p class="infoLongTxt">
-            Scara acoperită cu 300 de trepte a fost construită în anul 1642. A fost acoperită pentru protejarea copiilor, care urmau această cale spre liceului J. Haltrich. În urma modificărilor din 1849, au rămas doar 175 de trepte.
-        </p>
-    </main>
-    <main>
-        <p class="nameInfoTxt">O excursie de neuitat</p>
-        <p class="infoLongTxt">
-
-        </p>
-        <article class="groupPhoto" id="attraction1">
-            <img src="GroupPhoto1.jpg" alt="Poza de grup nr 1">
-            <img src="GroupPhoto2.jpg" alt="Poza de grup nr 2">
-            <img src="View1.jpg" alt="View nr 1">
-            <img src="View7.jpg" alt="View nr 7">
-            <img src="View3.jpg" alt="View nr 3">
-
-            <img src="View4.jpg" alt="View nr 4">
-            <img src="View5.jpg" alt="View nr 5">
-            <img src="View6.jpg" alt="View nr 6">
-            <img src="View2.jpg" alt="View nr 2">
-        </article>
-        <p class="nameInfoTxt">Impresii <br /> <br />1) Sighișoara</p>
-        <p class="infoLongTxt">
-            Sighișoara te întâmpină cu farmecul său medieval, străzile pietruite și clădirile colorate. Orașul natal al lui Vlad Țepeș emană istorie, iar cetatea sa bine conservată te transportă într-o călătorie în timp.
-        </p>
-        <p class="nameInfoTxt">2) Grădina zoologică</p>
-        <p class="infoLongTxt">
-            Gradina Zoologică din Târgu Mureș oferă o experiență captivantă, cu o varietate impresionantă de specii animale rare și exotice. Atmosfera relaxată și eforturile pentru conservarea biodiversității, fac din această grădină zoologică un loc potrivit pentru toți iubitorii de natură.
-        </p>
-        <p class="nameInfoTxt">3) Târgu Mureș</p>
-        <p class="infoLongTxt">
-            Târgu Mureș impresionează cu arhitectura sa eclectică, unde clădirile istorice coexistă armonios cu influențele baroce și secesioniste. Piața Trandafirilor este inima orașului, iar Palatul Culturii devine un simbol al bogăției culturale.
-        </p>
-
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>
-                &copy; 2023 Ștefan Ojog
-            </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__header">
+      <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-brown">Food</span>
+      <h4>Delicious Food</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+    </div>
+    <div class="card__footer">
+      <div class="user">
+        <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
+        <div class="user__info">
+          <h5>Jony Doe</h5>
+          <small>Yesterday</small>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__header">
+      <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="card__image" width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-red">Automobile</span>
+      <h4>Race to your heart content</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+    </div>
+    <div class="card__footer">
+      <div class="user">
+        <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+        <div class="user__info">
+          <h5>John Doe</h5>
+          <small>2d ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
 </body>
 </html>
